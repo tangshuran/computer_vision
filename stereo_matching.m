@@ -26,3 +26,6 @@ best_x = find_best_match(patch_left, strip_right);
 disp(best_x);
 patch_right = right_gray(patch_loc(1):(patch_loc(1) + patch_size(1) - 1), best_x:(best_x + patch_size(2) - 1));
 figure, imshow(patch_right);
+diff=patch_left-right_gray(patch_loc(1):(patch_loc(1) + patch_size(1) - 1), best_x:(best_x + patch_size(2) - 1));
+diff_sq=sumsqr(diff(:));
+disp(diff_sq);
