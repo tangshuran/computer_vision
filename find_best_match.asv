@@ -1,0 +1,9 @@
+% Find best match
+function best_x = find_best_match(patch, strip)
+    % TODO: Find patch in strip and return column index (x value) of topleft corner
+    min_diff=Inf;
+    best_x=0;
+    for x = 1:(size(strip(2)-size(patch)(2)))
+        
+    best_x = 1; % placeholder
+end
