@@ -6,3 +6,11 @@ import numpy as np
 #font = cv2.FONT_HERSHEY_SIMPLEX
 #cv2.putText(img,'OpenCV',(10,500), font, 3,(255,255,255),4,cv2.CV_AA)
 #cv2.imshow("image",img)
+#lena=cv2.imread("lena.png",cv2.COLORMAP_PINK)
+#cv2.imshow("lena",lena)
+left=cv2.imread("left.png")
+right=cv2.imread("right.png")
+add=cv2.add(left/2,right/2)
+cv2.imshow("add",add)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
