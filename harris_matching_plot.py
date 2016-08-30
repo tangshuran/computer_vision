@@ -3,7 +3,7 @@ from PIL import Image
 from matplotlib.pyplot import *
 from numpy import *
 import cv2
-wid = 10
+wid = 8
 im1=np.array(Image.open("left.png").convert("L"))
 im2=np.array(Image.open("right.png").convert("L"))
 harrisim = harris.compute_harris_response(im1,5)

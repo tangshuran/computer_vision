@@ -1,0 +1,12 @@
+from PIL import Image
+from matplotlib.pyplot import *
+from numpy import *
+import cv2
+import os
+import sift
+import glob
+os.chdir("./panoramio_pictures")
+imlist=glob.glob("*.jpg")
+for file in imlist:
+    sift.process_image(file,os.path.splitext(file)[0]+".sift")
+os.chdir("..")   
