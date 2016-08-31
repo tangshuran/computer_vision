@@ -10,3 +10,4 @@ imlist=glob.glob("*.jpg")
 for file in imlist:
     sift.process_image(file,os.path.splitext(file)[0]+".sift")
 #os.chdir("..")   
+#sift.process_image("ukbench00082.jpg","ukbench00082.sift")
