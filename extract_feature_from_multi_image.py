@@ -5,8 +5,8 @@ import cv2
 import os
 import sift
 import glob
-os.chdir("./panoramio_pictures")
+os.chdir("D:\Achive\ukbench\samples")
 imlist=glob.glob("*.jpg")
 for file in imlist:
     sift.process_image(file,os.path.splitext(file)[0]+".sift")
-os.chdir("..")   
+#os.chdir("..")   
